@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+><html>
+    <head>
+        <meta charset="uft-8"/>
+        <title>Salud Ocupacional</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+			<h1>Salud Ocupacional</h1>
+		</header>
+        
+        <h1>CONTACTOS</h1>         
+        <nav>
+        <ul>      
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Documentos.html">Documentos</a></li>
+        </ul>
+        </nav>
+
+
+        <time datetime="2023-10-28">28 de octubre de 2023</time>
+
+        <p>La fecha de hoy es: <span id="fecha"></span></p>
+        <script>
+            var fecha = new Date();
+            var opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById("fecha").innerHTML = fecha.toLocaleDateString('es-ES', opciones);
+        </script>
+
+
+
+        <h1>Tablas</h1>
+        <table border="1">
+            <caption>Listado de <strong>Afiliados</strong></caption>
+            <tr>
+                <th>funcionario</th>
+                <td>Nombre</td><!--columna-->
+                <td>Apellido</td>
+                <td>Web</td>
+            </tr>
+            <tr> <!--filas-->
+                <th>Gerente</th>
+                <td> l</td>
+                <td> l</td>
+                <td> l</td>
+            </tr>
+            <tr>
+                <th>Contador</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Secretario</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <h1>Formularios</h1><!--formularios-->
+        
+        <details open>
+            <summary>Datos personales</summary>
+        </details>   
+        
+        <p>Formulario de Contacto</p>
+        <form>
+            <label>Nombres</label>
+            <Input type="text"/><br><hr>
+
+            <label>Apellidos</label>
+            <Input type="text"/><br><hr>
+
+            <label>email</label>
+            <Input type="text"/><br><hr>
+
+
+        </form>
+        <button>
+            <img src="send.svg" alt="imagen" width="32" height="32" style="vertical-align: middle">
+            Enviar
+        </button>
+
+      
+    </body>
+
+
+</HTML>

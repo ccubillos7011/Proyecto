@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+><html>
+    <head>
+        <meta charset="uft-8"/>
+        <title>Salud Ocupacional</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+       
+    <body>
+       
+        <header>
+           <h1>Salud Ocupacional</h1>
+        </header>
+        <h1>Documentos</h1>
+        <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Contacto.html">Contactos</a></li>
+                    
+        </ul>
+        
+    </main>
+		
+    <hr>
+    <h2>Imagenes</h2>
+    
+    <img height="200" alt="Consultoria Salud Ocupacional" src="img\consultoria salud ocupacional.jfif"/>
+    <img height="200" alt="Elementos para Seguridad" src="img\elementos para seguridad.jfif"/>
+    <br><br>
+    
+    
+    </nav>
+            
+        <table>
+            <thead>
+                        
+            </thead>
+            <tbody id="tabla">
+                <tr>
+                    <td><input type="text" id="nombre"></td>
+                    <td><input type="text" id="apellido"></td>
+                    <td><input type="number" id="edad"></td>
+                    <td><input type="email" id="correo"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <button onclick="enviarDatos()">Enviar datos</button>
+        <button onclick="limpiarTabla()">Limpiar tabla</button>
+        <script>
+                function enviarDatos() {
+                    // Aquí puedes agregar código para enviar los datos a una base de datos
+                    console.log("Datos enviados");
+                }
+        
+                function limpiarTabla() {
+                    document.getElementById("tabla").innerHTML = "<tr><td><input type='text' id='nombre'></td><td><input type='text' id='apellido'></td><td><input type='number' id='edad'></td><td><input type='email' id='correo'></td></tr>";
+                }
+        </script>
+
+        <ul>
+            <main>
+                <h3><a href="img\PPAM-APP1.xlsm">Acceda a la app PPAM  (requiere excel)</a></h3>
+                <h3><a href="user_1.py">Acceda a usuarios</a></h3>
+                
+                <h3><a height="200" href="img\REGLA SUMA DECRETO 1347 PPAM.mp4" onclick="openPopup()">Tenga acceso a Video explicativo</a></h3>
+                
+                <div class="youtube-icon" onclick="openPopup()"></div>
+                
+                ------
+                
+                -----
+            </main>
+        </ul> 
+    </body>    
+</html>
